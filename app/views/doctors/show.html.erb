@@ -3,6 +3,9 @@
     <h1><%= @doctor.name %></h1>
   </div>
 
-  <h3>Patients</h3>
-  <p>Replace me with a list of patients that belong to this doctor!</p>
+<ul>
+  <% @doctor.patients.each do |patient|%>
+  <%= patient.name%>
+  <% end %>
+  </ul>
 </div>
